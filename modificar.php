@@ -185,7 +185,7 @@ form {
     	        Attribute::setAttribute($entrada,$atribut,$nou_contingut);
     	        $ldap->update($dn, $entrada);
     	        echo "Atribut ".$atribut. " ha sigut modificat";
-    	    } else echo "<b>Aquesta entrada no existeix</b><br><br>";
+    	    } else echo "<p><b>Aquesta entrada no existeix</b></p><br><br>";
     	}
     	
     	?>

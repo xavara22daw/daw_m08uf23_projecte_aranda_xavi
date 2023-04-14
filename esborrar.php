@@ -122,9 +122,9 @@ form {
     	    $ldap->bind();
     	    try{
     	        $ldap->delete($dn);
-    	        echo "<b>Entrada esborrada</b><br>";
+    	        echo "<p><b>Entrada esborrada</b></p><br>";
     	    } catch (Exception $e){
-    	        echo "<b>Aquesta entrada no existeix</b><br>";
+    	        echo "<p><b>Aquesta entrada no existeix</b></p><br>";
     	    }
     	}
     	

@@ -51,7 +51,6 @@ form {
 			background-color: #fff;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 			margin-top: 100px;
-	        margin-bottom: 100px;
 			border-radius: 5px;
 		}
 
@@ -168,7 +167,7 @@ form {
     		    Attribute::setAttribute($nova_entrada, 'description', $descripcio);
     		    $dn = 'uid=' . $uid . ',ou=' . $unorg . ',dc=fjeclot,dc=net';
     		    if ($ldap->add($dn, $nova_entrada))
-    		        echo "Usuari creat";
+    		        echo "<p>Usuari creat correctament!</p>";
     		}
     		?>
     		

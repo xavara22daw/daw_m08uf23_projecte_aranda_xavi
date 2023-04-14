@@ -106,6 +106,7 @@ body {
 		
 p {
 	text-align:center;
+	margin-top:15px;
 }
 a {
 	margin: auto;
@@ -146,9 +147,9 @@ a:hover{
     		    $entrada='uid='.$_GET['usr'].',ou='.$_GET['ou'].',dc=fjeclot,dc=net';
     		    $usuari=$ldap->getEntry($entrada);
     		    if(empty($usuari)){
-    		        echo "L'usuari que busques no existeix, torna a intentar-ho<br>";
+    		        echo "<p>L'usuari que busques no existeix, torna a intentar-ho</p><br>";
     		    }else{
-    		        echo "<b><u>".$usuari["dn"]."</b></u><br>";
+    		        echo "<p><b><u>".$usuari["dn"]."</b></u></p><br>";
     		        echo "<table>";
     		        foreach ($usuari as $atribut => $dada) {
     		            
