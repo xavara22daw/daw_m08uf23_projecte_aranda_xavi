@@ -22,6 +22,7 @@ body {
 		
 		
 		form {
+			margin-top:30px;
 			margin-bottom: 20px;
 			background-color: #fff;
 			padding: 20px;
@@ -29,7 +30,7 @@ body {
 			border-radius: 5px;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 			max-width: 600px;
-			margin: 0 auto;
+			margin: 20 auto auto auto;
 		}
 		
 		input[type="text"] {
@@ -90,6 +91,7 @@ body {
 			border: 1px solid #ddd;
 			border-radius: 5px;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			margin-bottom:20px;
 		}
 		
 		th,
@@ -149,7 +151,7 @@ a:hover{
     		    if(empty($usuari)){
     		        echo "<p>L'usuari que busques no existeix, torna a intentar-ho</p><br>";
     		    }else{
-    		        echo "<p><b><u>".$usuari["dn"]."</b></u></p><br>";
+    		        echo "<p><b><u>".$usuari["dn"]."</b></u></p>";
     		        echo "<table>";
     		        foreach ($usuari as $atribut => $dada) {
     		            
